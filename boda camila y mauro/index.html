@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camilla & Mauro · 15 Enero 2027</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Capa de pétalos (flores) -->
+    <div id="petals-container"></div>
+
+    <!-- ======================== -->
+    <!-- 1. HERO                 -->
+    <!-- ======================== -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <span class="hero-subtitle">Nos casamos</span>
+            <h1 class="hero-title">Camilla <span class="ampersand">&</span> Mauro</h1>
+            <p class="hero-date">15 de Enero, 2027</p>
+            <p class="hero-location"><i class="fas fa-map-pin"></i> Alto Verde, Tucumán</p>
+
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Días</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+
+            <a href="#details" class="btn-gold">Abrir invitación <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ======================== -->
+    <!-- 2. NUESTRA HISTORIA      -->
+    <!-- ======================== -->
+    <section id="story" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra historia de amor</h2>
+            <div class="story-timeline">
+                <div class="story-item" data-delay="0">
+                    <div class="story-icon"><i class="fas fa-heart"></i></div>
+                    <div class="story-content">
+                        <span class="story-date">2020</span>
+                        <h3>Cómo nos conocimos</h3>
+                        <p>Dos almas destinadas a encontrarse en el lugar y momento exacto. Una mirada, una sonrisa y todo cambió.</p>
+                    </div>
+                </div>
+                <div class="story-item" data-delay="200">
+                    <div class="story-icon"><i class="fas fa-ring"></i></div>
+                    <div class="story-content">
+                        <span class="story-date">2024</span>
+                        <h3>La propuesta</h3>
+                        <p>En un atardecer mágico, Mauro pidió a Camilla que fuera su compañera para siempre. La respuesta fue un "sí" lleno de lágrimas de felicidad.</p>
+                    </div>
+                </div>
+                <div class="story-item" data-delay="400">
+                    <div class="story-icon"><i class="fas fa-champagne-glasses"></i></div>
+                    <div class="story-content">
+                        <span class="story-date">2027</span>
+                        <h3>El gran día</h3>
+                        <p>15 de enero de 2027, el día que uniremos nuestras vidas en presencia de quienes más queremos. ¡Te esperamos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== -->
+    <!-- 3. DETALLES DEL EVENTO   -->
+    <!-- ======================== -->
+    <section id="details" class="section">
+        <div class="container">
+            <h2 class="section-title">Detalles del evento</h2>
+            <div class="details-grid">
+                <div class="detail-card" data-delay="0">
+                    <i class="fas fa-church detail-icon"></i>
+                    <h3>Ceremonia</h3>
+                    <p class="detail-time">17:00 hs</p>
+                    <p class="detail-address">Alto Verde, Tucumán</p>
+                    <a href="https://maps.google.com/maps?q=Alto+Verde+Tucumán" target="_blank" class="detail-map">
+                        <i class="fas fa-map-marker-alt"></i> Ver en mapa
+                    </a>
+                </div>
+                <div class="detail-card" data-delay="200">
+                    <i class="fas fa-glass-cheers detail-icon"></i>
+                    <h3>Recepción</h3>
+                    <p class="detail-time">20:00 hs</p>
+                    <p class="detail-address">Alto Verde, Tucumán</p>
+                    <a href="https://maps.google.com/maps?q=Alto+Verde+Tucumán" target="_blank" class="detail-map">
+                        <i class="fas fa-map-marker-alt"></i> Ver en mapa
+                    </a>
+                </div>
+            </div>
+            <div class="dress-code">
+                <i class="fas fa-vest"></i>
+                <span>Código de vestimenta: <strong>Formal · Elegante</strong></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================== -->
+    <!-- 4. GALERÍA (IMÁGENES DESDE CARPETA LOCAL)                   -->
+    <!-- =========================================================== -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Galería de recuerdos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-delay="0">
+                    <img src="archivos/imagenes/imagen1.jpeg" alt="Recuerdo 1" />
+                </div>
+                <div class="gallery-item" data-delay="100">
+                    <img src="archivos/imagenes/imagen2.jpeg" alt="Recuerdo 2" />
+                </div>
+                <div class="gallery-item" data-delay="200">
+                    <img src="archivos/imagenes/imagen3.jpeg" alt="Recuerdo 3" />
+                </div>
+                <div class="gallery-item" data-delay="300">
+                    <img src="archivos/imagenes/imagen4.jpeg" alt="Recuerdo 4" />
+                </div>
+                <div class="gallery-item" data-delay="400">
+                    <img src="archivos/imagenes/imagen5.jpeg" alt="Recuerdo 5" />
+                </div>
+                <div class="gallery-item" data-delay="500">
+                    <img src="archivos/imagenes/imagen6.jpeg" alt="Recuerdo 6" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== -->
+    <!-- 5. RSVP                 -->
+    <!-- ======================== -->
+    <section id="rsvp" class="section">
+        <div class="container">
+            <h2 class="section-title">¿Nos acompañas?</h2>
+            <p class="rsvp-subtitle">Confirma tu asistencia antes del 1 de enero de 2027</p>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" placeholder="Ej: Camilla Pérez" required />
+                </div>
+                <div class="form-group">
+                    <label>¿Asistirás?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attendance" value="si" required /> Sí, voy a ir</label>
+                        <label><input type="radio" name="attendance" value="no" /> No, no podré ir</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Cantidad de invitados</label>
+                    <select id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="diet">Restricciones alimenticias</label>
+                    <textarea id="diet" placeholder="Ej: Celíaco, vegetariano, alergias..."></textarea>
+                </div>
+                <button type="submit" class="btn-gold btn-large">Confirmar asistencia</button>
+            </form>
+            <div id="rsvp-success" class="hidden">
+                <i class="fas fa-check-circle"></i>
+                <h3>¡Gracias por confirmar!</h3>
+                <p>Te esperamos el 15 de enero 💜</p>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- ======================== -->
+    <!-- 7. FOOTER               -->
+    <!-- ======================== -->
+    <footer id="footer">
+        <div class="container">
+            <p class="footer-heart">Estamos ansiosos por celebrar contigo</p>
+            <p class="footer-contact">
+                <i class="fas fa-envelope"></i> camilla.mauro@boda.com
+            </p>
+            <!-- BOTÓN COMPARTIR POR WHATSAPP -->
+<button id="whatsapp-share" class="btn-whatsapp">
+    <i class="fab fa-whatsapp"></i> Compartir por WhatsApp
+</button>
+            <p class="footer-copy">Camilla & Mauro · 15 de enero de 2027 · Alto Verde, Tucumán</p>
+            <p class="footer-copy-small">© 2026 · Hecho con amor 💜</p>
+        </div>
+    </footer>
+    <!-- ======================== -->
+<!-- REPRODUCTOR DE AUDIO     -->
+<!-- ======================== -->
+<div id="audio-player">
+    <audio id="bg-audio" loop preload="auto">
+        <!-- Cambia el src por la ruta de tu audio -->
+        <source src="archivos/audio/A Thous.mp3" type="audio/mpeg">
+        <!-- Si no tienes audio propio, usa esta URL de prueba -->
+        <!-- <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"> -->
+        Tu navegador no soporta audio.
+    </audio>
+    <button id="audio-toggle">
+        <i class="fas fa-play"></i>
+    </button>
+</div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
